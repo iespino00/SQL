@@ -39,7 +39,7 @@ function getData($odbc)
 function createJson($array)
 {
     $jsonencoded = json_encode($array,JSON_UNESCAPED_UNICODE);
-    $fh = fopen("SQL/empleados.json", 'w');
+    $fh = fopen("empleados.json", 'w');
     fwrite($fh, $jsonencoded);
     fclose($fh);
     echo "Archivo JSON Creado";
