@@ -62,7 +62,7 @@ function utf8_converter($array)
 
 function updateRepository()
 {
-    $fecha=date("d/m/Y g:i a");
+    $fecha=date("d-m-Y H:i:s");
     exec("git add .");
     exec('git commit -m "'.$fecha.'" ');
     exec('git push -u origin master');
